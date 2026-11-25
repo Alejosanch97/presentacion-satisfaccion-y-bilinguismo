@@ -1,0 +1,43 @@
+/* ───────────── CREAR 2026 · BRANDING ─────────────
+   "Cuaderno de colores": papel cálido, tinta azul noche y
+   stickers de colores vivos (azul CREAR, coral, sol, menta y lila).
+   Cada sección del año tiene su propio color de fondo. */
+:root {
+  --paper: #fff8ec;      /* papel · fondo base */
+  --paper-2: #fbeed6;    /* papel tostado */
+  --ink: #18203f;        /* tinta azul noche */
+  --ink-2: #4a5170;      /* texto secundario */
+  --blue: #2350c8;       /* azul CREAR */
+  --sky: #9db8ff;        /* azul claro */
+  --coral: #ff6b4a;      /* coral · familias */
+  --sun: #ffc23d;        /* sol · lo que nos piden */
+  --mint: #17b08a;       /* menta · estudiantes */
+  --lilac: #8b6cf0;      /* lila · acento */
+  --white: #ffffff;
+  --line: rgba(24, 32, 63, 0.12);
+  --line-strong: rgba(24, 32, 63, 0.28);
+
+  /* colores que cambian según el tema del slide */
+  --fg: var(--ink);
+  --fg-2: var(--ink-2);
+  --accent: var(--coral);
+
+  --f-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --f-serif: "Instrument Serif", Georgia, serif;
+  --f-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root { height: 100%; }
+
+body {
+  background: #1b2244;
+  color: var(--ink);
+  font-family: var(--f-display);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  user-select: none;
+}
+
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }

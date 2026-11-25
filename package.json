@@ -1,5 +1,5 @@
 {
-    "name": "react-hello-advance",
+    "name": "presentacion-satisfaccion-y-bilinguismo",
     "private": true,
     "version": "0.0.0",
     "type": "module",
@@ -11,6 +11,8 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "canvas-confetti": "^1.9.4",
+        "framer-motion": "^11.18.2",
         "prop-types": "^15.8.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
@@ -27,6 +29,6 @@
         "vite": "^4.4.8"
     },
     "engines": {
-    "node": ">=20.0.0"
-  }
+        "node": ">=20.0.0"
+    }
 }
