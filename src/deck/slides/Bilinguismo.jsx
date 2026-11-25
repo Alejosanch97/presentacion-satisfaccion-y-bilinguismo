@@ -107,7 +107,7 @@ export const BilEscalera = () => (
       </motion.div>
     </div>
     <R className="foot">
-      Nivel que alcanza o supera al menos la mitad de cada grado (Exit Test 2026). <b>Listening</b> creció en 9 de 10 grados: los estudiantes entienden muy bien el inglés.
+      Así avanzan nuestros grados en el Exit Test 2026: de A1 en los primeros años a B1 en 8°, 9° y 10°, y un 11° que avanza hacia <b>B1+ y B2</b>. <b>Listening</b> creció en 9 de 10 grados.
     </R>
   </Frame>
 );

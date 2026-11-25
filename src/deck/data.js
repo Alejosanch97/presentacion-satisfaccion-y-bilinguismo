@@ -15,7 +15,7 @@ export const BIL_PROMOS = [
   { label: "10° → 11°", sub: "B1 o más", from: 58, to: 69 },
 ];
 
-/* Nivel que alcanza o supera al menos la mitad de cada grado (mediana del Exit Test 2026) */
+/* Ubicación de cada grado en la escalera. 11° aparece en B1+ y B2: el nivel al que avanza su grupo más alto */
 export const BIL_STAIRS = [
   { grade: "1°", level: "A1" },
   { grade: "2°", level: "A1" },
@@ -27,7 +27,8 @@ export const BIL_STAIRS = [
   { grade: "8°", level: "B1" },
   { grade: "9°", level: "B1" },
   { grade: "10°", level: "B1" },
-  { grade: "11°", level: "B1" },
+  { grade: "11°", level: "B1+" },
+  { grade: "11° ", level: "B2" },
 ];
 
 /* Familias · lo que más subió frente a 2025 (puntos) */

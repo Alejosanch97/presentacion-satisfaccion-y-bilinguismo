@@ -1,7 +1,7 @@
 # CREAR 2026 · Un año que se escucha
 
 Presentación animada (React + Vite + Framer Motion) con el balance 2026 del Instituto Pedagógico CREAR:
-bilingüismo, encuesta de familias, encuesta de estudiantes, lo que nos piden y las metas 2027.
+bilingüismo, extracurriculares, la certificación bilingüe, encuesta de familias, encuesta de estudiantes, lo que nos piden y las metas 2027.
 
 ## Cómo correrla
 

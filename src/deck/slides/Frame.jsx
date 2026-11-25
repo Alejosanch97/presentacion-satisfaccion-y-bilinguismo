@@ -54,7 +54,7 @@ export const Divider = ({ n, title, lead, icon, words = [] }) => (
       <motion.span
         key={w}
         className="div-word"
-        style={{ left: `${[76, 83, 74, 81, 76][i % 5]}%`, top: `${[14, 31, 48, 65, 81][i % 5]}%` }}
+        style={{ right: `${[4, 9, 3, 8, 4][i % 5]}%`, top: `${[14, 31, 48, 65, 81][i % 5]}%` }}
         initial={{ opacity: 0, scale: 0.4, rotate: -20 }}
         animate={{ opacity: 1, scale: 1, rotate: [-6, 5, -4][i % 3], y: [0, -10, 0] }}
         transition={{ delay: 0.6 + i * 0.18, type: "spring", stiffness: 160, y: { repeat: Infinity, duration: 3 + i, delay: 1.5 } }}

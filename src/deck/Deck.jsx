@@ -16,6 +16,8 @@ const THEMES = {
   coral: "#ff6b4a",
   mint: "#17b08a",
   sun: "#ffc23d",
+  lilac: "#8b6cf0",
+  night: "#141a36",
 };
 
 /* Escala el escenario de 1600×900 para que quepa en cualquier pantalla */

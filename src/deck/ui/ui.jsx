@@ -206,6 +206,9 @@ export const Icon = ({ name, size = 40 }) => {
     target: <><circle cx="20" cy="20" r="14" /><circle cx="20" cy="20" r="8" /><circle cx="20" cy="20" r="2" /></>,
     users: <><circle cx="15" cy="14" r="5" /><path d="M5 32 C5 24 25 24 25 32" /><circle cx="28" cy="15" r="4" /><path d="M27 23 C32 23 36 26 36 31" /></>,
     sparkle: <path d="M20 5 C21 14 26 19 35 20 C26 21 21 26 20 35 C19 26 14 21 5 20 C14 19 19 14 20 5 Z" />,
+    pencil: <><path d="M8 32 L10 24 L27 7 L33 13 L16 30 Z" /><path d="M23 11 L29 17 M8 32 L16 30" /></>,
+    trophy: <><path d="M13 7 H27 V16 C27 21 24 24 20 24 C16 24 13 21 13 16 Z" /><path d="M13 10 H7 C7 15 10 17 13 17 M27 10 H33 C33 15 30 17 27 17" /><path d="M20 24 V29 M14 33 H26 L25 29 H15 Z" /></>,
+    music: <><path d="M15 29 V9 L32 6 V26" /><circle cx="11" cy="29" r="4" /><circle cx="28" cy="26" r="4" /></>,
     ball: <><circle cx="20" cy="20" r="14" /><path d="M20 6 L26 14 L23 23 H17 L14 14 Z" /><path d="M26 14 L34 15 M14 14 L6 15 M23 23 L27 32 M17 23 L13 32" /></>,
   };
   return (

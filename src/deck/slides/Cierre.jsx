@@ -16,7 +16,7 @@ const METAS = [
 
 export const Metas = () => (
   <Frame className="metas">
-    <Kicker n="05">Hacia dónde vamos</Kicker>
+    <Kicker n="06">Hacia dónde vamos</Kicker>
     <Title size="m">Nuestras metas <em>2027</em>.</Title>
     <div className="grid-3 metas-grid">
       {METAS.map((m) => (
@@ -50,7 +50,7 @@ export const Gracias = () => {
   return (
     <Frame center className="gracias">
       <R v={pop}><Escudo size={300} /></R>
-      <Kicker>Instituto Pedagógico CREAR · 2027</Kicker>
+      <Kicker>Colegio Bilingüe Integral CREAR · 2027</Kicker>
       <Title size="xl">Escuchar, actuar, <em>crecer</em>.</Title>
       <Lead>Gracias a cada familia, estudiante y docente que hizo posible este año.</Lead>
       <R>
@@ -71,7 +71,7 @@ export const Gracias = () => {
 /* Resumen balance (antes de las metas) */
 export const Balance = () => (
   <Frame className="balance">
-    <Kicker n="05">El balance</Kicker>
+    <Kicker n="06">El balance</Kicker>
     <Title size="m">2026 nos deja <em>más fortalezas</em> que retos.</Title>
     <div className="bal-grid">
       <Card tone="mint" tilt={-1} className="bal">
@@ -89,7 +89,7 @@ export const Balance = () => (
           <li>Grammar y speaking para dar el paso al B2.</li>
           <li>Convivencia entre compañeros y clases más dinámicas.</li>
           <li>Respuestas ágiles a las familias.</li>
-          <li>Baños, espacios y una voz estudiantil que se vea.</li>
+          <li>Espacios de juego y una voz estudiantil que se vea.</li>
         </ul>
       </Card>
     </div>

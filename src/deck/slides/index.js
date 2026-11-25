@@ -1,13 +1,15 @@
 import { Portada, TresVoces } from "./Apertura";
 import { BilDivider, BilLogros, BilPromos, BilEscalera } from "./Bilinguismo";
+import { VivDivider, VivFavoritos, VivTodo } from "./Vivencias";
+import { Logro } from "./Logro";
 import { FamDivider, FamSatisfaccion, FamAvances, FamLoMejor } from "./Familias";
 import { EstDivider, EstTendencia, EstMejoras, EstValoran } from "./Estudiantes";
 import { PidenDivider, PidenFamilias, PidenEstudiantes } from "./Piden";
 import { Balance, Metas, Gracias } from "./Cierre";
 
-// Orden: lo que logramos → lo que valoran → lo que nos piden → metas 2027 → cierre.
+// Orden: bilingüismo → lo que vivimos → el gran logro → lo que valoran → lo que nos piden → metas 2027 → cierre.
 // "section" aparece arriba a la izquierda. "theme" cambia el color de fondo:
-// paper (papel), blue, coral, mint o sun. Para reordenar, mover líneas.
+// paper (papel), blue, coral, mint, sun, lilac o night. Para reordenar, mover líneas.
 export const SLIDES = [
   { id: "portada", section: "Inicio", theme: "paper", Component: Portada },
   { id: "voces", section: "Inicio", theme: "paper", Component: TresVoces },
@@ -16,6 +18,12 @@ export const SLIDES = [
   { id: "bil-logros", section: "Bilingüismo", theme: "paper", Component: BilLogros },
   { id: "bil-promos", section: "Bilingüismo", theme: "paper", Component: BilPromos },
   { id: "bil-escalera", section: "Bilingüismo", theme: "paper", Component: BilEscalera },
+
+  { id: "viv", section: "Lo que vivimos", theme: "lilac", Component: VivDivider },
+  { id: "viv-fav", section: "Lo que vivimos", theme: "paper", Component: VivFavoritos },
+  { id: "viv-todo", section: "Lo que vivimos", theme: "paper", Component: VivTodo },
+
+  { id: "logro", section: "Nuestro mayor logro", theme: "night", Component: Logro },
 
   { id: "fam", section: "Familias", theme: "coral", Component: FamDivider },
   { id: "fam-sat", section: "Familias", theme: "paper", Component: FamSatisfaccion },
