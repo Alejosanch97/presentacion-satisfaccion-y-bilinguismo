@@ -24,7 +24,7 @@ export const FinFluent = () => (
         <em>FinFluent</em>: aprender finanzas<br />en inglés.
       </Title>
       <Lead>
-        Nuestra nueva plataforma, creada en CREAR: educación financiera <b>completamente en inglés</b>, gamificada y
+        Una plataforma internacional que revoluciona cómo se aprende sobre el dinero: educación financiera <b>completamente en inglés</b>, gamificada y
         ordenada por niveles, de <b>6° (A2) a 11° (B2)</b>. Ahorro, presupuesto, inversión y emprendimiento… jugando.
       </Lead>
       <R className="ff-chips">
