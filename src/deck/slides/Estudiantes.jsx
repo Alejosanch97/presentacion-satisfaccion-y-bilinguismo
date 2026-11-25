@@ -5,7 +5,7 @@ import { EST_MEJORAS } from "../data";
 /* Sección 3 · Portada */
 export const EstDivider = () => (
   <Divider
-    n="07"
+    n="08"
     icon="student"
     title={<>La voz de nuestros<br /><em>estudiantes</em></>}
     lead="243 estudiantes de 1° a 11° nos contaron cómo viven el colegio."
@@ -17,7 +17,7 @@ export const EstDivider = () => (
 export const EstTendencia = () => (
   <Frame className="est-trend">
     <div className="est-trend-left">
-      <Kicker n="07">Estudiantes · Satisfacción</Kicker>
+      <Kicker n="08">Estudiantes · Satisfacción</Kicker>
       <Title size="m"><em>Tres años</em> seguidos de mejora.</Title>
       <Lead>
         La satisfacción pasa de <b>50,7 %</b> a <b>60,5 %</b> y la insatisfacción baja a la mitad: de <b>14 %</b> a <b>7,8 %</b>,
@@ -47,7 +47,7 @@ export const EstTendencia = () => (
 export const EstMejoras = () => (
   <Frame className="est-mej">
     <div className="est-mej-left">
-      <Kicker n="07">Estudiantes · Lo que mejoró</Kicker>
+      <Kicker n="08">Estudiantes · Lo que mejoró</Kicker>
       <Title size="m">Lo que trabajamos <em>se notó</em>.</Title>
       <Lead>
         Tras la encuesta de 2025 nos enfocamos en las clases, la carga de tareas, las jornadas de recuperación y la inclusión.
@@ -72,7 +72,7 @@ const VALORAN = [
 
 export const EstValoran = () => (
   <Frame className="est-val">
-    <Kicker n="07">Estudiantes · Lo que más valoran</Kicker>
+    <Kicker n="08">Estudiantes · Lo que más valoran</Kicker>
     <Title size="m">Profes cercanos, <em>inglés</em> y un lugar seguro.</Title>
     <div className="grid-4">
       {VALORAN.map((v) => (

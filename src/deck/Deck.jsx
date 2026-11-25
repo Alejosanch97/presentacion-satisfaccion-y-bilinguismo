@@ -18,6 +18,7 @@ const THEMES = {
   sun: "#ffc23d",
   lilac: "#8b6cf0",
   teal: "#0e8a9e",
+  sky: "#9db8ff",
   night: "#141a36",
 };
 

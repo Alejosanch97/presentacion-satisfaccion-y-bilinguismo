@@ -4,7 +4,8 @@ import { ProgDivider, ProgPolaris, ProgGrados, ProgDistinciones } from "./Progre
 import { ImpDivider, ImpGrados, ImpAreas } from "./Improve";
 import { MejorCurso } from "./MejorCurso";
 import { FinFluent, Saber11 } from "./Hitos";
-import { TechPathways, TechLogros } from "./Robotica";
+import { TechDivider, TechPathways, TechLogros } from "./Robotica";
+import { Aprobacion } from "./Aprobacion";
 import { VivDivider, VivFavoritos, VivTodo } from "./Vivencias";
 import { Logro } from "./Logro";
 import { FamDivider, FamSatisfaccion, FamAvances, FamLoMejor } from "./Familias";
@@ -14,7 +15,7 @@ import { Balance, Metas, Gracias } from "./Cierre";
 
 // Orden: bilingüismo → Progrentis → IM-Prove → mejores cursos → lo que vivimos → el gran logro → lo que valoran → lo que nos piden → metas 2027 → cierre.
 // "section" aparece arriba a la izquierda. "theme" cambia el color de fondo:
-// paper (papel), blue, teal, coral, mint, sun, lilac o night. Para reordenar, mover líneas.
+// paper (papel), blue, teal, sky, coral, mint, sun, lilac o night. Para reordenar, mover líneas.
 export const SLIDES = [
   { id: "portada", section: "Inicio", theme: "paper", Component: Portada },
   { id: "voces", section: "Inicio", theme: "paper", Component: TresVoces },
@@ -36,6 +37,7 @@ export const SLIDES = [
   { id: "imp-areas", section: "IM-Prove", theme: "paper", Component: ImpAreas },
 
   { id: "mejor", section: "Mejores cursos", theme: "paper", Component: MejorCurso },
+  { id: "aprobacion", section: "Cierre académico", theme: "paper", Component: Aprobacion },
 
   { id: "viv", section: "Lo que vivimos", theme: "lilac", Component: VivDivider },
   { id: "viv-fav", section: "Lo que vivimos", theme: "paper", Component: VivFavoritos },
@@ -45,6 +47,7 @@ export const SLIDES = [
 
   { id: "logro", section: "Nuestro mayor logro", theme: "night", Component: Logro },
 
+  { id: "tech-div", section: "Robótica e IA", theme: "sky", Component: TechDivider },
   { id: "tech", section: "Robótica e IA", theme: "paper", Component: TechPathways },
   { id: "tech-logros", section: "Robótica e IA", theme: "paper", Component: TechLogros },
 

@@ -81,7 +81,7 @@ export const VivTodo = () => (
       <Ribbon items={ROWS[2]} dir={1} speed={46} offset={4} />
     </R>
     <R className="bubble viv-quote">
-      En 4° y 5°, entre lo mejor del año recuerdan la salida al teatro, el mundialito, la Crazy Week… y a sus amigos.
+      Nuestros estudiantes nos indican que lo mejor del año fue la salida al teatro, el mundialito, la Crazy Week… y compartir con sus amigos.
     </R>
   </Frame>
 );

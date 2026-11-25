@@ -1,6 +1,17 @@
 import { motion } from "framer-motion";
-import { Frame, Kicker, Title, Lead, Card } from "./Frame";
+import { Frame, Kicker, Title, Lead, Card, Divider } from "./Frame";
 import { R, Counter, Icon, pop } from "../ui/ui";
+
+/* Sección 6 · Portada */
+export const TechDivider = () => (
+  <Divider
+    n="06"
+    icon="rocket"
+    title={<>Robótica e IA:<br />creadores de <em>tecnología</em></>}
+    lead="De Scratch en primaria a Python e inteligencia artificial en la media, con certificaciones de la industria."
+    words={["Scratch", "Micro:bit", "IoT", "Python", "IA ética"]}
+  />
+);
 
 /* Tech Pathways: ruta de microcredenciales de Scratch a IA */
 const RUTA = [
@@ -18,7 +29,7 @@ const PILARES = [
 
 export const TechPathways = () => (
   <Frame className="tech">
-    <Kicker>Robótica e IA · Alianza SET21 + CREAR</Kicker>
+    <Kicker n="06">Robótica e IA · Alianza SET21 + CREAR</Kicker>
     <Title size="m">CREAR <em>Tech Pathways</em>: de Scratch a la IA.</Title>
     <Lead>Formamos creadores tecnológicos con microcredenciales en cada etapa, de primaria a bachillerato.</Lead>
     <div className="tech-route">
@@ -51,7 +62,7 @@ export const TechPathways = () => (
 /* Logros certificados */
 export const TechLogros = () => (
   <Frame className="tech-logros">
-    <Kicker>Robótica e IA · Logros certificados</Kicker>
+    <Kicker n="06">Robótica e IA · Logros certificados</Kicker>
     <Title size="m">Talento CREAR con <em>proyección internacional</em>.</Title>
     <Lead>Nuestros estudiantes no solo aprenden tecnología: se gradúan con credenciales validadas por la industria.</Lead>
     <div className="tl-grid">
