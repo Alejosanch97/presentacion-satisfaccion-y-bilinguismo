@@ -17,6 +17,7 @@ const THEMES = {
   mint: "#17b08a",
   sun: "#ffc23d",
   lilac: "#8b6cf0",
+  teal: "#0e8a9e",
   night: "#141a36",
 };
 

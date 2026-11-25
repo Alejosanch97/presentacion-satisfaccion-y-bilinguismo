@@ -4,7 +4,7 @@ import { Icon } from "../ui/ui";
 /* Sección 4 · Portada */
 export const PidenDivider = () => (
   <Divider
-    n="05"
+    n="08"
     icon="megaphone"
     title={<>Lo que nos <em>piden</em><br />para 2027</>}
     lead="Escuchar también es reconocer lo que podemos hacer mejor. Estas son nuestras oportunidades."
@@ -33,7 +33,7 @@ const FAMILIAS = [
 
 export const PidenFamilias = () => (
   <Frame className="piden">
-    <Kicker n="05">Lo que piden las familias</Kicker>
+    <Kicker n="08">Lo que piden las familias</Kicker>
     <Title size="m">Cuatro pedidos <em>claros</em>, cuatro respuestas.</Title>
     <div className="grid-4 piden-grid">
       {FAMILIAS.map((p) => <Pide key={p.t} {...p} />)}
@@ -52,7 +52,7 @@ const ESTUDIANTES = [
 
 export const PidenEstudiantes = () => (
   <Frame className="piden">
-    <Kicker n="05">Lo que piden los estudiantes</Kicker>
+    <Kicker n="08">Lo que piden los estudiantes</Kicker>
     <Title size="m">Ideas de los estudiantes, <em>convertidas en plan</em>.</Title>
     <div className="grid-3 piden-grid compact">
       {ESTUDIANTES.map((p) => <Pide key={p.t} {...p} />)}

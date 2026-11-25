@@ -6,7 +6,7 @@ import { FAM_AVANCES } from "../data";
 /* Sección 2 · Portada */
 export const FamDivider = () => (
   <Divider
-    n="03"
+    n="06"
     icon="family"
     title={<>Lo que nos dicen<br />las <em>familias</em></>}
     lead="145 familias, de preescolar a 11°, nos contaron cómo vivieron 2026."
@@ -18,7 +18,7 @@ export const FamDivider = () => (
 export const FamSatisfaccion = () => (
   <Frame className="fam-sat">
     <div className="fam-left">
-      <Kicker n="03">Familias · Satisfacción</Kicker>
+      <Kicker n="06">Familias · Satisfacción</Kicker>
       <Title size="m">9 de cada 10 familias están <em>satisfechas</em> con CREAR.</Title>
       <R className="people" aria-hidden>
         {Array.from({ length: 10 }).map((_, i) => (
@@ -57,7 +57,7 @@ export const FamSatisfaccion = () => (
 /* Lo que más avanzó */
 export const FamAvances = () => (
   <Frame className="fam-av">
-    <Kicker n="03">Familias · Lo que más avanzó</Kicker>
+    <Kicker n="06">Familias · Lo que más avanzó</Kicker>
     <Title size="m">Escuchamos en 2025, <em>actuamos</em> en 2026.</Title>
     <div className="fam-av-grid">
       <Card className="chart-card" tilt={-0.5}>
@@ -89,7 +89,7 @@ const FAVS = [
 
 export const FamLoMejor = () => (
   <Frame className="fam-best">
-    <Kicker n="03">Familias · Lo mejor de CREAR</Kicker>
+    <Kicker n="06">Familias · Lo mejor de CREAR</Kicker>
     <R v={pop} className="quote-xl">
       <span className="q-mark">“</span>
       Los niños <em>no son un número</em>.

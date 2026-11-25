@@ -5,7 +5,7 @@ import { R, Icon } from "../ui/ui";
 /* Sección 2 · Portada */
 export const VivDivider = () => (
   <Divider
-    n="02"
+    n="05"
     icon="star"
     title={<>Un año para<br /><em>vivirlo</em></>}
     lead="Extracurriculares, celebraciones y experiencias que llenaron 2026 de recuerdos."
@@ -27,7 +27,7 @@ const FAVS = [
 
 export const VivFavoritos = () => (
   <Frame className="viv-fav">
-    <Kicker n="02">Extracurriculares · Lo que más nos gustó</Kicker>
+    <Kicker n="05">Extracurriculares · Lo que más nos gustó</Kicker>
     <Title size="m">Lo que más <em>disfrutamos</em> juntos.</Title>
     <div className="grid-4 viv-grid">
       {FAVS.map((f) => (
@@ -70,7 +70,7 @@ const Ribbon = ({ items, dir = 1, speed = 38, offset = 0 }) => {
 
 export const VivTodo = () => (
   <Frame className="viv-todo">
-    <Kicker n="02">Todo lo que vivimos</Kicker>
+    <Kicker n="05">Todo lo que vivimos</Kicker>
     <Title size="m">Un colegio que también se aprende <em>viviéndolo</em>.</Title>
     <Lead>
       Celebraciones en inglés, semanas temáticas, torneos, salidas y escuela de padres: 2026 fue un año lleno de experiencias compartidas.

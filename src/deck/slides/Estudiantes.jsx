@@ -5,7 +5,7 @@ import { EST_MEJORAS } from "../data";
 /* Sección 3 · Portada */
 export const EstDivider = () => (
   <Divider
-    n="04"
+    n="07"
     icon="student"
     title={<>La voz de nuestros<br /><em>estudiantes</em></>}
     lead="243 estudiantes de 1° a 11° nos contaron cómo viven el colegio."
@@ -17,7 +17,7 @@ export const EstDivider = () => (
 export const EstTendencia = () => (
   <Frame className="est-trend">
     <div className="est-trend-left">
-      <Kicker n="04">Estudiantes · Satisfacción</Kicker>
+      <Kicker n="07">Estudiantes · Satisfacción</Kicker>
       <Title size="m"><em>Tres años</em> seguidos de mejora.</Title>
       <Lead>
         La satisfacción pasa de <b>50,7 %</b> a <b>60,5 %</b> y la insatisfacción baja a la mitad: de <b>14 %</b> a <b>7,8 %</b>,
@@ -47,7 +47,7 @@ export const EstTendencia = () => (
 export const EstMejoras = () => (
   <Frame className="est-mej">
     <div className="est-mej-left">
-      <Kicker n="04">Estudiantes · Lo que mejoró</Kicker>
+      <Kicker n="07">Estudiantes · Lo que mejoró</Kicker>
       <Title size="m">Lo que trabajamos <em>se notó</em>.</Title>
       <Lead>
         Tras la encuesta de 2025 nos enfocamos en las clases, la carga de tareas, las jornadas de recuperación y la inclusión.
@@ -64,15 +64,15 @@ export const EstMejoras = () => (
 
 /* Lo que más valoran */
 const VALORAN = [
-  { icon: "heart", v: "87 %", t: "de 1° a 3° se siente cuidado y protegido en el colegio.", tone: "coral", tilt: -2 },
-  { icon: "smile", v: "80 %", t: "de 1° a 3° se siente feliz en CREAR.", tone: "sun", tilt: 1.5 },
+  { icon: "heart", v: "86 %", t: "de nuestros estudiantes valora el acompañamiento de orientación escolar.", tone: "coral", tilt: -2 },
+  { icon: "smile", v: "82 %", t: "de nuestros estudiantes valora la atención de enfermería.", tone: "sun", tilt: 1.5 },
   { icon: "users", v: "64 %", t: "califica el trato de sus docentes con la nota más alta.", tone: "blue", tilt: -1 },
-  { icon: "globe", v: "4,24", t: "de 5: el bilingüismo es lo mejor evaluado por bachillerato.", tone: "mint", tilt: 2 },
+  { icon: "globe", v: "4,24", t: "de 5: el bilingüismo es lo mejor evaluado por nuestros estudiantes.", tone: "mint", tilt: 2 },
 ];
 
 export const EstValoran = () => (
   <Frame className="est-val">
-    <Kicker n="04">Estudiantes · Lo que más valoran</Kicker>
+    <Kicker n="07">Estudiantes · Lo que más valoran</Kicker>
     <Title size="m">Profes cercanos, <em>inglés</em> y un lugar seguro.</Title>
     <div className="grid-4">
       {VALORAN.map((v) => (
@@ -84,8 +84,8 @@ export const EstValoran = () => (
       ))}
     </div>
     <div className="quotes">
-      <R className="bubble">“Los descansos separados están demasiado bien, promueven la convivencia entre compañeros.”<small>Estudiante de 10°</small></R>
-      <R className="bubble alt">“El inglés ha mejorado mucho y me gustaría que continuaran las actividades.”<small>Estudiante de 7°</small></R>
+      <R className="bubble">“Los descansos separados están demasiado bien, promueven la convivencia entre compañeros.”<small>Nuestros estudiantes dicen</small></R>
+      <R className="bubble alt">“El inglés ha mejorado mucho y me gustaría que continuaran las actividades.”<small>Nuestros estudiantes dicen</small></R>
     </div>
   </Frame>
 );

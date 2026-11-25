@@ -114,7 +114,7 @@ export const HBars = ({ data, max, unit = "%", decimals = 0, delay = 0.4, color 
 };
 
 /* ───────── Antes → después (2025 → 2026) ───────── */
-export const Dumbbells = ({ data, min = 0, max = 100, delay = 0.4, decimals = 0 }) => {
+export const Dumbbells = ({ data, min = 0, max = 100, delay = 0.4, decimals = 0, unit = "%" }) => {
   const P = (v) => ((v - min) / (max - min)) * 100;
   return (
     <div className="dbs">
@@ -138,7 +138,7 @@ export const Dumbbells = ({ data, min = 0, max = 100, delay = 0.4, decimals = 0 
             />
           </div>
           <span className="db-val">
-            <s>{fmt(d.from, decimals)}%</s> → <b><Counter from={d.from} to={d.to} decimals={decimals} suffix="%" delay={delay + 0.35 + i * 0.12} /></b>
+            <s>{fmt(d.from, decimals)}{unit}</s> → <b><Counter from={d.from} to={d.to} decimals={decimals} suffix={unit} delay={delay + 0.35 + i * 0.12} /></b>
           </span>
         </div>
       ))}
@@ -182,6 +182,34 @@ export const Trend = ({ series, labels, w = 720, h = 360, max = 70, delay = 0.4 
     </svg>
   );
 };
+
+/* ───────── Barras apiladas (niveles por grado) ───────── */
+export const StackBars = ({ rows, keys, delay = 0.4, total = "pct" }) => (
+  <div className="stacks">
+    {rows.map((r, i) => (
+      <div key={r.label} className="stack">
+        <span className="stack-label">{r.label}</span>
+        <div className="stack-track">
+          {keys.map((k) => (r[k.key] ? (
+            <motion.div
+              key={k.key}
+              className="stack-seg"
+              style={{ background: k.color, color: k.text || "var(--ink)" }}
+              initial={{ width: 0 }}
+              animate={{ width: `${r[k.key]}%` }}
+              transition={{ delay: delay + i * 0.07, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+            >
+              {r[k.key] >= 6 ? r[k.key] : ""}
+            </motion.div>
+          ) : null))}
+        </div>
+        <span className={`stack-total ${r[total] >= 80 ? "hi" : ""}`}>
+          <Counter to={r[total]} suffix="%" delay={delay + i * 0.07} />
+        </span>
+      </div>
+    ))}
+  </div>
+);
 
 /* ───────── Íconos simples ───────── */
 export const Icon = ({ name, size = 40 }) => {

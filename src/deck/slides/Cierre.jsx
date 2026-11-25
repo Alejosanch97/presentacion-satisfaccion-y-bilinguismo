@@ -16,7 +16,7 @@ const METAS = [
 
 export const Metas = () => (
   <Frame className="metas">
-    <Kicker n="06">Hacia dónde vamos</Kicker>
+    <Kicker n="09">Hacia dónde vamos</Kicker>
     <Title size="m">Nuestras metas <em>2027</em>.</Title>
     <div className="grid-3 metas-grid">
       {METAS.map((m) => (
@@ -71,13 +71,14 @@ export const Gracias = () => {
 /* Resumen balance (antes de las metas) */
 export const Balance = () => (
   <Frame className="balance">
-    <Kicker n="06">El balance</Kicker>
+    <Kicker n="09">El balance</Kicker>
     <Title size="m">2026 nos deja <em>más fortalezas</em> que retos.</Title>
     <div className="bal-grid">
       <Card tone="mint" tilt={-1} className="bal">
         <h3>Lo que celebramos</h3>
         <ul>
           <li>Inglés que sube de nivel en <b>todas las promociones</b>.</li>
+          <li><b>Polaris Notable</b> en Progrentis y <b>159 distinciones</b> a nivel Iberoamérica.</li>
           <li><b>9 de 10 familias</b> satisfechas y 40 de 42 indicadores estables o en alza.</li>
           <li>Estudiantes con <b>tres años seguidos</b> de mejora.</li>
           <li>Docentes, calidez y cercanía como sello de CREAR.</li>
